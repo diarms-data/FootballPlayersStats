@@ -1,0 +1,3 @@
+package Layer
+
+object GoldLayer
