@@ -6,7 +6,7 @@ object Reader {
   def sourceFromCsv(path: String)(implicit spark: SparkSession): DataFrame = {
     spark.read
       .option("header", "true")
-      .option("delimiter", ";")
+      .option("delimiter", ",")
       .option("encoding", "ISO-8859-1")
       .csv(path)
   }
